@@ -112,7 +112,7 @@
                                 <td>&nbsp;</td>
                                 </tr>                                
                                 <tr>
-                                    <td><a href="" class="btn btn-success">Klik Disini</a></td>                                    
+                                    <td><a href="pengajuan proker/<?php echo $ambil['file']; ?>" class="btn btn-success" class="btn btn-success" download>Klik Disini</a></td>                                    
                                 </tr>
                             </table>
                         </div>

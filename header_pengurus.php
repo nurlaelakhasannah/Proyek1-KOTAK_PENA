@@ -20,11 +20,14 @@
         <link rel="stylesheet" href="plugins/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
         <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap.css">
         <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css">
+        <link rel="stylesheet" href="dist/css/fullcalendar.min.css">
         <link rel="stylesheet" href="plugins/weather-icons/css/weather-icons.min.css">
         <link rel="stylesheet" href="plugins/c3/c3.min.css">
         <link rel="stylesheet" href="plugins/owl.carousel/dist/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="plugins/owl.carousel/dist/assets/owl.theme.default.min.css">
         <link rel="stylesheet" href="dist/css/theme.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />  
         <script src="src/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
 
@@ -143,19 +146,9 @@
                                     <a href="lihat_proker.php"><i class="ik ik-layers"></i><span>Lihat Proker</span> 
                                         <!-- <span class="badge badge-success">New</span> -->
                                     </a>
-                                </div>
-                                <div class="nav-item">
-                                    <a href="ajukan_proker.php"><i class="ik ik-layers"></i><span>Pengajuan Proker</span> 
-                                        <!-- <span class="badge badge-success">New</span> -->
-                                    </a>
-                                </div>                                
+                                </div>                              
                                 <div class="nav-item">
                                     <a href="lihat_arsip.php"><i class="ik ik-layers"></i><span>Lihat Arsip</span> 
-                                        <!-- <span class="badge badge-success">New</span> -->
-                                    </a>
-                                </div>
-                                <div class="nav-item">
-                                    <a href=""><i class="ik ik-calendar"></i><span>Schedule</span> 
                                         <!-- <span class="badge badge-success">New</span> -->
                                     </a>
                                 </div>                                

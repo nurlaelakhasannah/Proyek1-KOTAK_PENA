@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Kopen Manage</title>
+        <title>Kotak Pena</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,11 +20,37 @@
         <link rel="stylesheet" href="plugins/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
         <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap.css">
         <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css">
+        <link rel="stylesheet" href="dist/css/fullcalendar.min.css">
         <link rel="stylesheet" href="plugins/weather-icons/css/weather-icons.min.css">
         <link rel="stylesheet" href="plugins/c3/c3.min.css">
         <link rel="stylesheet" href="plugins/owl.carousel/dist/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="plugins/owl.carousel/dist/assets/owl.theme.default.min.css">
         <link rel="stylesheet" href="dist/css/theme.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />  
+        <style>
+            body {
+                margin-top: 50px;                
+                font-size: 12px;
+                font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+            }
+
+            #calendar {
+                width: 700px;
+                margin: 0 auto;
+            }
+
+            .response {
+                height: 60px;
+            }
+
+            .success {
+                background: #cdf3cd;
+                padding: 10px 60px;
+                border: #c3e6c3 1px solid;
+                display: inline-block;
+            }
+        </style>
         <script src="src/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
 
@@ -124,7 +150,7 @@
                     <div class="sidebar-header">
                         <a class="header-brand" href="index.html">
                             <div class="logo-img">
-                               <img src="img/logokopen.png" class="header-brand-img" alt="lavalite" width="100%"> 
+                               <img src="img/logo kopen.png" class="header-brand-img" alt="lavalite" width="100%"> 
                             </div>
                             <span class="text">Kotak Pena</span>
                         </a>
@@ -155,7 +181,7 @@
                                     </a>
                                 </div>
                                 <div class="nav-item">
-                                    <a href=""><i class="ik ik-calendar"></i><span>Schedule</span> 
+                                    <a href="manage_schedule.php"><i class="ik ik-calendar"></i><span>Schedule</span> 
                                         <!-- <span class="badge badge-success">New</span> -->
                                     </a>
                                 </div>                                

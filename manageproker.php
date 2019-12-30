@@ -16,17 +16,14 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card">
-                <div class="row">
-                    <div>
-                         <div><h3>Data Proker</h3></div>
-                   </div> 
-                </div>                                                                                                                                                            
-            </div>
-                <div class="row">
-                    <div>
-                        <div ><a href="ajukan_proker.php" class="btn btn-primary">Ajukan Proker</a></div>
-                    </div>
-                </div> 
+            <div class="card-header">                                    
+                    <div><h3>Data Proker</h3></div>                                            
+                    <div class="row">
+                        <div class="col-md-12">
+                                <div class="col-md-2"><a href="ajukan_proker.php" class="btn btn-primary">Ajukan Proker</a></div>
+                            </div>
+                        </div>                                                                       
+                </div>
                     <div class="card-body">
                         <table id="manageproker" class="table table-bordered">
                             <thead>

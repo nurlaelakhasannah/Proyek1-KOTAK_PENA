@@ -18,9 +18,22 @@
                             <table width="100%">
                             <?php 
                                 $id = @$_GET['id'];
-                                $get = mysqli_query($koneksi,"SELECT * FROM arsip JOIN proker ON arsip.user_id=proker.user_id where arsip_id='$id'");
+    
+                                $get = mysqli_query($koneksi,"SELECT * FROM arsip JOIN tbuser ON arsip.user_id=tbuser.user_id where arsip_id='$id'");
                                 $ambil = mysqli_fetch_assoc($get);
                                 ?>
+                                <tr>
+                                    <th>Nama Pengupload</th>                                    
+                                </tr>
+                                <tr>
+                                <td>&nbsp;</td>
+                                </tr>                                
+                                <tr>
+                                    <td><?php echo $ambil['nama_lengkap']; ?></td>                             
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                </tr>                                
                                 <tr>
                                     <th>Nama Arsip</th>                                    
                                 </tr>
@@ -28,7 +41,7 @@
                                 <td>&nbsp;</td>
                                 </tr>                                
                                 <tr>
-                                    <td><?php echo $ambil['nama_arsip']; ?></td>                                    
+                                    <td><?php echo $ambil['nama_arsip']; ?></td>                          
                                 </tr>
                                 <tr>
                                 <td>&nbsp;</td>
@@ -40,7 +53,7 @@
                                 <td>&nbsp;</td>
                                 </tr>                                
                                 <tr>
-                                    <td><?php echo $ambil['kategori_arsip']; ?></td>                                    
+                                    <td><?php echo $ambil['kategori_arsip']; ?></td>
                                 </tr>
                                 <tr>
                                 <td>&nbsp;</td>
@@ -64,7 +77,7 @@
                                 <td>&nbsp;</td>
                                 </tr>                                
                                 <tr>
-                                    <td><a href="" class="btn btn-success">Klik Disini</a></td>                                    
+                                    <td><a href="pengajuan arsip/<?php echo $ambil['file']; ?>" class="btn btn-success" download>Klik Disini</a></td>                                    
                                 </tr>
                             </table>
                         </div>

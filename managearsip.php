@@ -16,7 +16,15 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header"><h3>Data Arsip</h3></div>
+                <div class="card-header">
+                    <h3>Data Arsip</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                                <div class="col-md-2"><a href="tambah_arsip.php" class="btn btn-primary">Tambah Arsip</a></div>
+                            </div>
+                        </div> 
+
+                </div>
                     <div class="card-body">
                         <table id="managearsip" class="table table-bordered">
                             <thead>
