@@ -37,16 +37,40 @@
                                  ?></small>
                     </div>
                     <div class="progress progress-sm">
-                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: 62%;"></div>
+                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
                     </div>
                 </div>
             </div>
-
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="widget">
+                    <div class="widget-body" style="background-color: #15AC00; color:white;">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="state">
+                                <h6>Schedule</h6>
+                                <h2><?php include 'koneksi/koneksi.php';
+                                    $hitung = mysqli_query($koneksi,"SELECT count(*) as schedule_count FROM schedule");
+                                    $ambil = mysqli_fetch_assoc($hitung);
+                                    echo $ambil['schedule_count'];
+                                  ?></h2>
+                            </div>
+                            <div class="icon">
+                                <i class="ik ik-calendar" style="color: white;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress progress-sm" style="width: 50%; background-color: #4D7EF9;">
+                    </div>
+                </div>
+            </div>
         </div>
         <br />
     <h2 align="center">Schedule Time Kotak Pena</h2>
         <br />
     <div id="calendarpengurus"></div>
+    <br>
+    <div class="container">
+                <?php  include('orgchart.php'); ?>   
+            </div> 
     </div>
 </div>        
 <?php 

@@ -14,14 +14,16 @@ session_start();
             if ($ambil['level']=="superadmin") {
                 $_SESSION['username']=$username;
                 $_SESSION['level']=$ambil['level']; 
-                $_SESSION['userid']=$ambil['user_id'];                                      
+                $_SESSION['userid']=$ambil['user_id'];     
+                $_SESSION['login']=true;                         
                 // echo $_SESSION['level'];
                 header("location:../dashboard.php");
             }
             else if ($ambil['level']=="pengurus") {
                 $_SESSION['username']=$username;
                 $_SESSION['level']=$ambil['level'];   
-                $_SESSION['userid']=$ambil['user_id'];   
+                $_SESSION['userid']=$ambil['user_id'];  
+                $_SESSION['login']=true; 
                 // echo $_SESSION['userid'];                                 
                 // echo $_SESSION['level'];
                 header("location:../dashboard_pengurus.php");

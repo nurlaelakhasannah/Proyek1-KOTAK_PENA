@@ -20,9 +20,14 @@
                     <div><h3>Data Proker</h3></div>                                            
                     <div class="row">
                         <div class="col-md-12">
-                                <div class="col-md-2"><a href="ajukan_proker.php" class="btn btn-primary">Ajukan Proker</a></div>
-                            </div>
-                        </div>                                                                       
+                                <div class="col-md-2"><a href="ajukan_prokerSA.php" class="btn btn-primary">Ajukan Proker</a></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                                <div class="col-md-2"><a href="template/Template Mini Proposal Kotak Pena.docx" class="btn btn-success"  style=" padding-bottom: 10px;" download>Download Template</a></div>
+                        </div>
+                    </div>                                                                        
                 </div>
                     <div class="card-body">
                         <table id="manageproker" class="table table-bordered">

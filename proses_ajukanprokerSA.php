@@ -21,7 +21,7 @@
 					move_uploaded_file($file_tmp, 'pengajuan proker/'.$file);
 					$query = mysqli_query($koneksi,"INSERT INTO proker VALUES(NULL, '$user_id','$judul', '$divisi', '$subdivisi', '$deskripsi','$tahun','proses', '$file')");
 					if($query){
-						echo 'FILE BERHASIL DI UPLOAD';
+						echo "<script>window.alert('Proker Berhasil Diajukan');window.location='manageproker.php';</script>"; 
 					}else{
 						echo 'GAGAL MENGUPLOAD GAMBAR';
 					}

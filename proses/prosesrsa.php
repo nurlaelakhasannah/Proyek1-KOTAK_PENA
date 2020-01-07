@@ -4,7 +4,7 @@
         $name = $_POST['namalengkap'];
         $username = $_POST['username'];
         $jabatan = $_POST['jabatan'];
-        $level = 'pengurus';
+        $level = 'superadmin';
         $email= $_POST['email'];
         $password = $_POST['password'];
         $nohp = $_POST['nohp'];
@@ -12,7 +12,7 @@
         $confirmpassword = $_POST['confirmpassword'];
             if ($password==$confirmpassword) {
                 $insert=mysqli_query($koneksi,"INSERT INTO tbuser VALUES (
-                    NULL,'$name','$jabatan','$email','$level','$password','$username','$nohp','tidak aktif','$prd_jbtn')");
+                    NULL,'$name','$jabatan','$email','$level','$password','$username','$nohp','aktif','$prd_jbtn')");
                 if ($insert) {
                     echo "<script>window.alert('Daftar Sukses dong');window.location.href='../index.php'</script>";
                 }else{

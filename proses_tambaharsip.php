@@ -7,7 +7,7 @@
             $tahun = $_POST['tahun'];
 			$user_id = $_SESSION['userid'];
 
-			$ekstensi_diperbolehkan	= array('doc','pdf','docx');
+			$ekstensi_diperbolehkan	= array('doc','pdf','docx', 'jpg', 'jpeg', 'png');
 			$file = $_FILES['file']['name'];
 			$x = explode('.', $file);
 			$ekstensi = strtolower(end($x));
@@ -17,7 +17,7 @@
 			if(in_array($ekstensi, $ekstensi_diperbolehkan) === true){
 				if($ukuran < 1044070){			
 					move_uploaded_file($file_tmp, 'pengajuan arsip/'.$file);
-					$query = mysqli_query($koneksi,"INSERT INTO arsip VALUES(NULL, '$user_id', NULL,'$nama','$katarsip', '$tahun', '$file')");
+					$query = mysqli_query($koneksi,"INSERT INTO arsip VALUES(NULL, '$user_id','$nama','$katarsip', '$tahun', '$file')");
 					if($query){
 						echo "<script>window.alert('file Berhasil di Upload');window.location='managearsip.php';</script>"; 
 					}else{

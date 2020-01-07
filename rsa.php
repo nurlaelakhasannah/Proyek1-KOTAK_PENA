@@ -20,9 +20,9 @@
 <body class="bg-dark">
   <div class="container">
     <div class="card card-register mx-auto mt-5">
-      <div class="card-header">Register an Account</div>
+      <div class="card-header">Register an Account Superadmin</div>
       <div class="card-body">
-        <form action="proses/prosesdaftar.php" method="post">
+        <form action="proses/prosesrsa.php" method="post">
           <div class="form-group">
             <div class="form-row">
               <div class="col-md-6">

@@ -1,7 +1,7 @@
 <footer class="footer">
                     <div class="w-100 clearfix">
-                        <span class="text-center text-sm-left d-md-inline-block">Copyright © 2020 KOTAK PENA v2.0. All Rights Reserved.</span>
-                        <span class="float-none float-sm-right mt-1 mt-sm-0 text-center">Crafted with <i class="fa fa-heart text-danger"></i> by <a href="http://lavalite.org/" class="text-dark" target="_blank">Kotak Pena</a></span>
+                        <span class="text-center text-sm-left d-md-inline-block">Copyright © 2020 KOTAK PENA</span>
+                        <span class="float-none float-sm-right mt-1 mt-sm-0 text-center"> <i class="fa fa-heart text-danger"></i> by <a href="http://lavalite.org/" class="text-dark" target="_blank">Kotak Pena</a></span>
                     </div>
                 </footer>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -29,6 +29,18 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/moment.min.js"></script>
 
+                <script type="text/javascript">
+                    // $('.nav-item').click(function(e) {
+                    //     e.preventDefault();
+                    //     //prevent the link from being followed
+                    //     $('.nav-item').removeClass('active');
+                    //     $(this).addClass('active');                        
+                    // });
+                    $('.nav-item').on('click',function(){
+                       $( this ).parent().find( 'nav-item' ).removeClass( 'active' );
+                        $( this ).addClass( 'active' );
+                    });
+                </script>
       
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
