@@ -38,16 +38,16 @@
                         </select>            
 
                         <label for="judulproker"><strong>Judul Proker</strong></label>
-                        <input type="text" class="form-control" name="judulproker" placeholder="Masukan Judul Proker">
+                        <input type="text" class="form-control" name="judulproker" autocomplete="off" placeholder="Masukan Judul Proker" required>
 
                         <label for="deskripsi"><strong>Deskripsi Proker</strong></label>
-                        <input type="textarea" class="form-control" name="deskripsi" placeholder="Masukan Deskripsi Proker . .">
+                        <input type="textarea" class="form-control" name="deskripsi" autocomplete="off" placeholder="Masukan Deskripsi Proker . ." required>
 
                         <label for="tahun"><strong>Tahun</strong></label>
-                        <input type="text" class="form-control" name="tahun" placeholder="Masukan Tahun Pengajuan">
+                        <input type="text" class="form-control" name="tahun" autocomplete="off" placeholder="Masukan Tahun Pengajuan" required>
                        
                         <label for="file"><strong>File</strong></label>
-                        <input type="file" class="form-control" name="file">
+                        <input type="file" class="form-control" name="file" required>
                         
                         <button class="btn btn-primary btn-block" name="submit">Ajukan Proker</button>
                     </form>
